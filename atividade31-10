@@ -1,0 +1,64 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package atividade31.pkg10;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author camargo
+ */
+public class Atividade3110 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+        System.out.println("Insira o valor da Primeira nota: ");
+        int n1 = sc.nextInt();
+            while(n1>10 ){
+                    System.out.println("Valor invalido insira uma valor de 0 a 10: ");
+                    n1 = sc.nextInt();
+            }
+        System.out.println("Insira o valor da Segunda nota: ");
+        int n2 = sc.nextInt();
+            while(n2>10 ){
+                    System.out.println("Valor invalido insira uma valor de 0 a 10: ");
+                    n2 = sc.nextInt();
+            }
+        double media =(n1+n2)/2;
+        System.out.println("A media do aluno é:" + media);
+      
+        System.out.println("Deseja fazer outro calculo [1]Sim [2]não:");
+        int calculonovo = sc.nextInt();
+         while(calculonovo >2){
+             System.out.println("insira [1]Sim e [2]Não senão o programa não fechara:");
+             }while(calculonovo == 1){
+         System.out.println("Insira o valor da Primeira nota: ");
+        n1 = sc.nextInt();
+            while(n1>10 ){
+                    System.out.println("Valor invalido insira uma valor de 0 a 10: ");
+                    n1 = sc.nextInt();
+            }
+        System.out.println("Insira o valor da Segunda nota: ");
+        n2 = sc.nextInt();
+            while(n2>10 ){
+                    System.out.println("Valor invalido insira uma valor de 0 a 10: ");
+                    n2 = sc.nextInt();
+            }
+        media =(n1+n2)/2;
+        System.out.println("A media do aluno é:" + media);
+         
+         }while(calculonovo == 2){
+             System.out.println("Otimo Ate mais !!!");
+            } 
+             
+            
+         
+    }
+    
+}
