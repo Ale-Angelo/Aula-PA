@@ -1,0 +1,24 @@
+package apenquanto3;
+import java.util.*;
+
+public class Apenquanto3 {
+
+    public static void main(String[] args) {
+    Scanner entrada = new Scanner(System.in);
+    int A, R, RESP = 1;
+    R = 0;
+     do //faça
+     {
+        System.out.println("Entre um valor para A: ");
+        A = entrada.nextInt(); //Leitura A
+        R = R + A; //Soma A em R
+        System.out.println("Continua? Tecle [1] para SIM / [2] para NÃO: ");
+        RESP = entrada.nextInt();
+     }
+     
+     while (RESP == 1); //Enquanto
+     System.out.println("O resultado correspondente a: " + R); //Mostra valor
+     System.out.println("\n"); //Pula linha
+     
+     }
+}
