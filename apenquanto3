@@ -1,0 +1,22 @@
+package apenquanto2;
+import java.util.*;
+public class Apenquanto2 {
+
+    public static void main(String[] args) {
+     Scanner entrada = new Scanner(System.in);
+     int A, R, I = 1;
+     R = 0;
+     do //faça
+     {
+        System.out.println("Entre um valor para A: ");
+        A = entrada.nextInt(); //Leitura A
+        R = R + A; //Soma A em R
+        I += 1; //Incrementa 1
+        }
+     
+     while (I <= 5); //Enquanto
+     System.out.println("O resultado correspondente a: " + R); //Mostra valor
+     System.out.println("\n"); //Pula linha
+    
+}
+}
